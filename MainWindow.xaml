@@ -1,0 +1,11 @@
+<Window x:Class="TechECS.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="SPOS Group Workspace">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <NavigationView x:Name="NavTechECS" PaneDisplayMode="Left" Header="SPOS Group // TechECS_EU" SelectionChanged="NavTechECS_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Gestor de Alias / PATH" Icon="Terminal" x:Name="MenuAlias"/>
+                <NavigationViewItem Content="Backup Management" Icon="Copy" x:Name="MenuBackups"/>
+            </NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame" Padding="24"/>
+        </NavigationView>
+    </Grid>
+</Window>
